@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    target = os.environ.get('TARGET', 'GitHub')
+    target = os.environ.get('TARGET', 'World')
     return render_template("index.html", content=f"Hello {target}")
 
 if __name__ == "__main__":
